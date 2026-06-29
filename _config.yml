@@ -1,0 +1,84 @@
+title: "pusaka5678"
+title_separator: " - "
+description: "Portal informasi dan sumber daya pusaka5678 — panduan, berita, dan tautan terpercaya."
+url: "https://pusaka5678.abstraction.blog"
+official_site: "https://pusaka5678.org"
+baseurl: ""
+lang: id_ID
+timezone: Asia/Jakarta
+markdown: gfm
+remote_theme: pages-themes/modernist
+
+permalink: /blog/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .git/
+  - README.md
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+logo: "/assets/images/logo.svg"
+image: "/assets/images/og-default.svg"
+
+feed:
+  path: atom.xml
+  posts_limit: 10
+
+twitter:
+  card: summary_large_image
+
+relative_links:
+  enabled: true
+  collections: true
+
+title_from_headings:
+  enabled: true
+  collections: true
+  pages: true
+
+author:
+  name: "pusaka5678"
+  url: "https://pusaka5678.abstraction.blog"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: "/assets/images/og-default.svg"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: "pusaka5678"
+      image: "/assets/images/og-default.svg"
+
+github:
+  is_project_page: false
